@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+body {
+    background-color: #FDFEFA;
+}
+
+
+header {
+    height: 15vh;
+}
+
+header img {
+    max-height: 12vh;
+    padding: 1em;
+    background-color: #C4C4C4;
+}
+
+main {
+    margin-top: 0.35em;
+}
+
+
+nav {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.6em;
+}
+
+nav ul {
+    margin: 0 2.5vw;
+    margin: 0 0 1em 0.7em;
+    padding-top: 0.6em;
+}
+
+nav a:link {
+    color: #989697;
+}
+
+a:visited {
+    color: #989697;
+}
+
+a:hover {
+    color: #E44232;
+}
+
+a:active {
+    color: #626262;
+}
+
+.heading {
+    margin: 0.7em 2.5vw;
+    padding-left: 0.2em;
+}
+
+h1 {
+    
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 58px;
+    border-left: solid 2px #E44232;
+    color: #989697;
+    padding: 0.3em;
+}
+
+h2 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #E44232;
+}
+
+h3 {
+    
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.information {
+    /* display: grid;
+    grid-template-columns: 30% 1fr; */
+    margin-bottom: 1em;
+}
+
+.infobox {
+     margin-left: 3vw; 
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     max-height: 80%;
+}
+
+.infobox ul {
+    margin-bottom: 1em;
+}
+
+.infobox li {
+    list-style-type: square;
+    color: #626262;
+    font-size: 10px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2em;
+    margin-left: 1em;
+}
+
+section > ul > :first-child {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+    color: #E44232;
+    list-style: none;
+    margin-left: 0;
+}
+
+p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 0.5em;
+    margin-right: 3vw;
+    color: #626262;
+    border-left: solid 2px #E44232;
+}
+
+.index-controllers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 4em;
+}
+
+.index-controllers img {
+    padding: 0.5em;
+    
+}
+
+.games {
+    margin: 0 2.5vw;
+    max-width: 100%;
+}
+
+.games h2 {
+    padding: 0.8em 0 0.5em 0.5em;
+}
+
+ol {
+    border-left: solid 2px #E44232;
+    margin-left: 0.4em;
+    padding-left: 1.3em;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+ol li::before {
+ content: "\25AA";
+ color: #E44232;
+ font-weight: bold;
+ display: inline-block; 
+ width: 1em;
+ margin-left: -1em;
+}
+
+.games li {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #626262;
+    line-height: 2em;
+    font-size: 14px;
+}
+
+li span {
+    padding:0 0.5em;
+}
+
+
+
+/*Consoles*/
+
+.consoles, .controllers{
+ background-color: #C4C4C4;
+ display: flex;
+ justify-content: space-around;
+ padding: 1em; 
+}
+
+
+.bottom-nav {
+    margin: 0.6em 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    /* letter-spacing: 0.1em; */
+    
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.bottom-nav span {
+    color: #E44232;
+    font-size: 2em;
+    font-style: normal;
+    padding: 0 0.3em;
+    line-height: 0;
+    position: relative;
+    top: 6px;
+}
+
+
+
+/* Footer */
+
+footer {
+    margin: 0 2.5vw;
+    border-top: solid 1px #626262;
+}
+
+footer a {
+    padding: 1em 0 2em 0;
+    display: block;
+    color: #626262;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 3 00;
+    font-style: normal;
+    
+}
+ /* Grid */
+.grid-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+}
+
+.main-nav {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.consoles {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.heading {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+.infobox{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.information {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+}
+
+.controllers {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+
+.games {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+}
+
+/* Media query */
+
+@media screen and (min-width: 900px) {
+    /* .grid-container {
+        display: grid;
+        grid-template-columns: 0.5fr 1.3fr 1.3fr 1fr; 
+        grid-template-rows: 1.3fr 0.5fr 1.8fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "main-nav consoles consoles games"
+          "main-nav infobox infobox controllers"
+          "main-nav h1 information controllers"; 
+      }
+      .controllers { grid-area: controllers; }
+      .games { grid-area: games; }
+      .consoles { grid-area: consoles; }
+      .information { grid-area: information; }
+      h1 { grid-area: h1; }
+      .main-nav { grid-area: main-nav; }
+      .infobox { grid-area: infobox; } */
+    
+      .grid-container {
+        display: grid;
+        grid-template-columns: 140px 2fr 2fr 2fr;
+        grid-template-rows: 35vh 0.5fr 3fr;
+    }
+    
+    .main-nav {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+    
+    .consoles {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .heading {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .infobox{
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+    
+    .information {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+    
+    .controllers {
+        grid-column: 4 / 5;
+        grid-row: 2 / 4;
+    }
+    
+    .games {
+        grid-column: 4 / 4;
+        grid-row: 1 / 2;
+    }
+
+
+
+
+
+    
+    .infobox {
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0.5em 1em 0 0.5em;
+   }
+
+   .infobox li {
+       margin-right: 0.5em;
+   }
+
+   ol {
+       column-count: 2;
+       margin-left: 0;
+       border: none;
+       margin-left: 1em;
+       
+   }
+
+   
+
+   .consoles {
+       display: flex;
+       justify-content: right;
+   } 
+
+   .games {
+       border-left: solid 2px #E44232;
+       margin: 0;
+       /* display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       flex-wrap: wrap; */
+   }
+
+   .games h2 {
+       padding: 0 0 0 0.4em;
+   }
+
+   .controllers {
+        border-left: solid 2px #E44232;
+    }
+
+    .heading {
+       margin: 0;
+    }
+
+    .consoles img {
+        max-width: 80%;
+    }  
+}
+
+
+@media screen and (max-width: 1320px) {
+    .games li {
+        line-height: 1.5em;
+    }
+}
+
